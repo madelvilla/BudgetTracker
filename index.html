@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Budget Tracker</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Budget Tracker</h1>
+    </header>   
+
+
+    <main>
+        <form class= "budget-tracker">
+            <div class="all-totals">
+                <div class="total-income">
+                    <h2 class="total-header">Total Income:</h2>
+                    <p class="income-total">0</p>
+                </div>
+
+                <div class="total-expenses">
+                    <h2 class="total-header">Total Expenses:</h2>
+                    <p class="expenses-total">0</p> 
+                </div>    
+
+                <div class="total-balance">
+                    <h2 class="total-header">Total Balance:</h2>
+                    <p class="total-display">0</p>
+                </div>
+        </div>
+
+            <div class="user-text">
+                <ul class="input-amnt">
+                <li>
+                    <p>Income:</p>
+                    <input type="text" id="amount-i" placeholder="Amount" autocomplete="off">
+                    <p class="txt-required">Income description:</p>
+                    <input type="text" id="income-txt" placeholder="Income Description" autocomplete="off" maxlength="30">
+                </li>
+                <li>
+                    <p>Expenses:</p>
+                    <input type="text" id="amount-e" placeholder="Amount" autocomplete="off">
+                    <p class="txt-required">Expense description:</p>
+                    <input type="text" id="expense-txt" placeholder="Expense Description" autocomplete="off" maxlength="30"></li>
+                </ul>
+                <button id="enter">Enter</button>
+            </div>
+        </form>
+
+        <div class="history">
+            <h3>Entry History</h3>
+            <button class="accordion">Income</button>
+            <div class="panel">
+                <p id="income-entries"></p>
+            </div>
+
+            <button class="accordion">Expenses</button>
+            <div class="panel">
+                <p id="expense-entries"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
